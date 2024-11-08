@@ -1,0 +1,708 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* Apply Open Sans to the body */
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Apply Montserrat to all headings */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    display: inline-block;
+    height: 50px;
+    font-size: 1em;
+    padding: 15px 15px 15px 0px !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    word-break: break-all;
+}
+
+header {
+    position: fixed;
+    width: 98%;
+    height: 50px;
+    padding: 0px 10px 0px 0px;
+    margin: 1%;
+    background: #eeeeee;
+    box-shadow: 0px 0px 4px #666666;
+    vertical-align: middle;
+    border-radius: 25px;
+}
+
+#balance,
+#home-button,
+#my-leads,
+#home,
+#login,
+#logout,
+#settings {
+    height: 50px;
+    color: #666666;
+}
+
+#home {
+    float: left;
+    padding: 5px;
+}
+
+#home img {
+    width: auto;
+    height: 100%;
+    border: 1px solid #2196F3;
+    border-radius: 25px;
+}
+
+#balance,
+#home-button,
+#my-leads,
+#login,
+#logout,
+#settings {
+    float: right;
+    padding: 13px 10px;
+}
+
+#main {
+    padding: 85px 0px 20px 0px;
+}
+
+#cont {
+    margin: auto;
+}
+
+#results h3 {
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px #666;
+}
+
+#paypal-button-container,
+#paypal-button-top-up {
+    width: 100%;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.anim {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.popup {
+    position: fixed;
+    right: -100px;
+    background-color: #f60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 100;
+    opacity: 0;
+}
+
+.popup.show {
+    opacity: 1;
+    right: 0px;
+}
+
+.popup i {
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.notes {
+    color: #666;
+}
+
+.pc {
+    display: inline;
+}
+
+.hide-in-mobile {
+    visibility: visible;
+}
+
+.truncate-url {
+    display: inline-block;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mini-menu a {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.form {
+    /*
+    */
+    margin: 20px auto;
+    padding: 2.5% 5%;
+    max-width: 500px;
+    background: url('./img/tpw1px75.png') center center repeat;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px #666;
+}
+
+/* Common Grid Container Styles */
+.form-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+/* Common Grid Item Styles */
+.form-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-grid-item img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.form-grid-item h2 {
+    font-size: 2em;
+}
+
+.full-width h2 {
+    padding: 10px 0px;
+}
+
+/* Common Label Styles */
+.form-grid-item label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Common Input Field Styles */
+.form-grid-item input {
+    width: 100%;
+    background: #eee;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Common Select Field Styles */
+.form-grid-item select {
+    width: 100%;
+    background: #eee;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Common Button Styles */
+.form-grid-item button,
+.form-grid-item .button,
+.full-width button,
+.full-width .button {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.form-grid-item button:hover,
+.form-grid-item .button:hover,
+.full-width button:hover,
+.full-width .button:hover {
+    background-color: #0056b3;
+}
+
+.form-grid-item button:disabled,
+.form-grid-item .button:disabled,
+.full-width button:disabled,
+.full-width .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.form-grid-item .pay-now,
+.full-width .pay-now {
+    font-size: 1.25em;
+}
+
+/* -- switch box -- */
+.form-grid-item .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+.form-grid-item .switch-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 34px;
+    width: 200px;
+}
+
+.form-grid-item .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.form-grid-item .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.form-grid-item .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.form-grid-item input:checked+.slider {
+    background-color: #2196F3;
+}
+
+.form-grid-item input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.form-grid-item input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders button */
+.form-grid-item .slider.round {
+    border-radius: 17px;
+}
+
+.form-grid-item .slider.round:before {
+    border-radius: 50%;
+}
+
+/* -- dropdowns -- */
+.suggestions {
+    background: #eee;
+    border-top: none;
+    border-right: 1px solid #007bff;
+    border-bottom: 1px solid #007bff;
+    border-left: 1px solid #007bff;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 16px 4px 16px #999;
+}
+
+.suggestions div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background: #fff;
+}
+
+.query-suggestions {
+    position: absolute;
+    z-index: 10;
+    /* Position it below the input field */
+    top: calc(100% - 2px);
+    ;
+    /* Align it to the left edge of the input */
+    left: 0;
+}
+
+/* -- switch box end -- */
+
+.card-container,
+.card-table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribute space between cards */
+}
+
+.card-table-container {
+    border: 1px solid #6cc;
+    margin-bottom: 0px;
+}
+
+.card {
+    background: url('./img/tpw1px75.png') center center repeat;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px #666;
+    /*Adjust width and margin */
+    flex: 1 1 calc(33.333% - 32px);
+    list-style: none;
+    color: #333;
+}
+
+.card-table {
+    flex: 1 1 calc(16.666% - 16px);
+    background: url('./img/tpw1px75.png') center center repeat;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0px;
+    /*
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px #666;
+    */
+}
+
+.card h4 {
+    margin: 0px 0px 20px 0px !important;
+}
+
+.card input,
+.card button,
+.card label {
+    margin: 10px 0px;
+}
+
+.card input {
+    width: 100%;
+    background: #eee;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card button {
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.card button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .pc {
+        display: none;
+    }
+
+    .hide-in-mobile {
+        visibility: hidden;
+    }
+
+    .card-table-container {
+        margin-bottom: 5px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        /* Make each card take full width */
+        margin: 8px 0;
+        /* Adjust margin for better spacing */
+    }
+
+    .card-table {
+        flex: 1 1 100%;
+    }
+}
+
+/* -- indicators -- */
+.lead-summary {
+    display: flex;
+    width: 100%;
+    /* Distribute items evenly */
+    justify-content: space-around;
+    /* Vertically center items */
+    align-items: center;
+    /* Add some spacing below */
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    text-align: center;
+    /* Center text within each item */
+}
+
+.indicator-value {
+    display: inline-block;
+    width: 13vw;
+    /* Width set to 10% of viewport width */
+    height: 13vw;
+    /* Height set to 10% of viewport width */
+    line-height: 12vw;
+    /* Line-height adjusted accordingly */
+    border: 10px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 16px #666;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.indicator-label {
+    display: block;
+    font-size: 1.5em;
+    /* Increased font size */
+    font-weight: bold;
+    /* Make the text bold */
+    padding: 10px 0px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    /*
+    .lead-summary {
+        flex-direction: column;
+    }
+    */
+    .lead-summary {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .summary-item {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .indicator-value {
+        width: 25vw;
+        /* Width set to 10% of viewport width */
+        height: 25vw;
+        /* Height set to 10% of viewport width */
+        line-height: 25vw;
+        border: 2px solid white;
+        /* Line-height adjusted accordingly */
+        font-size: 1.2em;
+    }
+
+    .indicator-label {
+        font-size: 1em;
+        /* Increased font size */
+        font-weight: normal;
+    }
+}
+
+/* -- search box -- */
+#search {
+    /*
+    */
+    margin: 15% auto;
+    padding: 5%;
+    background: url('./img/tpw1px75.png') center center repeat;
+    font-size: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#search .group,
+#search .button-group {
+    display: inline-block;
+    padding: 5px;
+    font-size: 25px;
+    vertical-align: middle;
+    /*
+    */
+    border: 1px solid red;
+}
+
+#search .group {
+    width: 30%;
+}
+
+#search .button-group {
+    width: 10%;
+}
+
+#search .group label {
+    display: inline-block;
+    width: 10%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#search .group input {
+    display: inline-block;
+    width: 88%;
+
+    vertical-align: middle;
+}
+
+#search .group select {
+    display: inline-block;
+    width: 88%;
+    vertical-align: middle;
+}
+
+#search .button-group button {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.search {
+    padding: 10px 0px;
+    text-align: right;
+}
+
+.search label {
+    padding: 5px 5px;
+}
+
+.search input {
+    padding: 5px 5px;
+    background: #eee;
+    border: 1px solid #2196F3;
+    border-radius: 5px;
+}
+
+.search .download {
+    font-size: 1.5em;
+    color: #666;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.search .download:hover {
+    color: #007bff;
+}
+
+/* -- search box end -- */
+
+footer {
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.err {
+    color: red;
+}
+
+.ok {
+    color: green;
+}
+
+[ng\:cloak],
+[ng-cloak],
+.ng-cloak {
+    display: none !important;
+}
+
+/* Styling for Mission Statement, Product Services, and Description textareas */
+textarea#missionStatement,
+textarea#productServices,
+textarea#description {
+    width: 100%;
+    background: #eee; /* Matches the background of input fields */
+    border: 1px solid #007bff; /* Same border as input fields */
+    border-radius: 10px; /* Same border-radius as input fields */
+    padding: 10px; /* Same padding as input fields */
+    font-family: 'Open Sans', sans-serif; /* Same font as input fields */
+    font-size: 1em; /* Same font size as input fields */
+    color: #333; /* Text color matches the input fields */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    resize: vertical; /* Allows vertical resizing */
+}
+
+/* Hover and focus effects for textareas */
+textarea#missionStatement:hover,
+textarea#productServices:hover,
+textarea#description:hover,
+textarea#missionStatement:focus,
+textarea#productServices:focus,
+textarea#description:focus {
+    border-color: #0056b3; /* Darker border on hover/focus */
+    outline: none; /* Removes default outline */
+}
+
+/* Disabled state for textareas */
+textarea#missionStatement:disabled,
+textarea#productServices:disabled,
+textarea#description:disabled {
+    background-color: #ccc; /* Matches the disabled button style */
+    cursor: not-allowed; /* Shows disabled cursor */
+}
