@@ -82,6 +82,7 @@
                 <select id="country" 
                         ng-model="business.country" 
                         ng-options="country.code as country.name for country in countries">
+                    <option value="">-- Select Country --</option> <!-- Optional placeholder -->
                 </select>
             </div>
             <br>
@@ -140,6 +141,59 @@
         </div>
     </div>
 
+    <div class="card-container">
+        <div class="card">
+            <h3>SMTP Configuration Information</h3>
+
+            <div>
+                <label for="smtpUsername">Username:</label>
+                <input type="text" id="smtpUsername" ng-model="smtp.username" placeholder="yourusername" required />
+            </div>
+
+            <div>
+                <label for="smtpPassword">Password:</label>
+                <input type="password" id="smtpPassword" ng-model="smtp.password" placeholder="Your password" required />
+            </div>
+
+            <div>
+                <label for="smtpServer">SMTP Server:</label>
+                <input type="text" id="smtpServer" ng-model="smtp.server" placeholder="smtp.example.com" required />
+            </div>
+
+            <div class="form-group">
+                <label for="smtpSecurity">Security Type:</label>
+                <select id="smtpSecurity" ng-model="smtp.security" ng-options="option.value as option.label for option in securityOptions" required>
+                </select>
+            </div>
+
+            <br>
+            <div>
+                <label for="smtpPort">SMTP Port:</label>
+                <input type="number" id="smtpPort" ng-model="smtp.port" placeholder="587" required />
+            </div>
+
+            <div>
+                <label for="smtpSenderName">Sender Name:</label>
+                <input type="text" id="smtpSenderName" ng-model="smtp.senderName" placeholder="Your Name" required />
+            </div>
+
+            <div>
+                <label for="smtpTestEmail">Test Email (optional):</label>
+                <input type="email" id="smtpTestEmail" ng-model="smtp.testEmail" placeholder="test@example.com" />
+            </div>
+
+            <div>
+                <!-- "Test" button is enabled only when all fields are filled, including the optional Test Email field -->
+                <button type="button" ng-click="testConnection()" ng-disabled="!isAllFieldsFilled()">Test</button>
+            </div>
+
+            <div>
+                <!-- "Save" button is enabled only when all required fields (excluding Test Email) are filled -->
+                <button type="button" ng-click="saveSmtpSettings()" ng-disabled="!isRequiredFieldsFilled()">Save</button>
+            </div>
+
+        </div>
+    </div>
     <script src="src/angular.min.js"></script>
     <script src="src/angular-sanitize.min.js"></script>
     <script src="app.js"></script>

@@ -195,81 +195,81 @@ app.controller('leadsController', ['$scope', function ($scope, $http, $location,
 
     // Define the languages array
         $scope.contentLanguages = [
-            { value: 'en-us', label: 'English (US)' },
-            { value: 'en-gb', label: 'English (UK)' },
-            { value: 'en-ca', label: 'English (Canada)' },
-            { value: 'en-au', label: 'English (Australia)' },
-            { value: 'en-in', label: 'English (India)' },
-            { value: 'es-es', label: 'Spanish (Spain)' },
-            { value: 'es-mx', label: 'Spanish (Mexico)' },
-            { value: 'es-us', label: 'Spanish (US)' },
-            { value: 'fr-fr', label: 'French (France)' },
-            { value: 'fr-ca', label: 'French (Canada)' },
-            { value: 'de-de', label: 'German (Germany)' },
-            { value: 'de-at', label: 'German (Austria)' },
-            { value: 'de-ch', label: 'German (Switzerland)' },
-            { value: 'it-it', label: 'Italian (Italy)' },
-            { value: 'it-ch', label: 'Italian (Switzerland)' },
-            { value: 'pt-br', label: 'Portuguese (Brazil)' },
-            { value: 'pt-pt', label: 'Portuguese (Portugal)' },
-            { value: 'nl-nl', label: 'Dutch (Netherlands)' },
-            { value: 'nl-be', label: 'Dutch (Belgium)' },
-            { value: 'sv-se', label: 'Swedish (Sweden)' },
-            { value: 'no-no', label: 'Norwegian (Norway)' },
-            { value: 'fi-fi', label: 'Finnish (Finland)' },
-            { value: 'da-dk', label: 'Danish (Denmark)' },
-            { value: 'ru-ru', label: 'Russian (Russia)' },
-            { value: 'zh-cn', label: 'Chinese (Simplified, China)' },
-            { value: 'zh-tw', label: 'Chinese (Traditional, Taiwan)' },
-            { value: 'zh-hk', label: 'Chinese (Traditional, Hong Kong)' },
-            { value: 'ja-jp', label: 'Japanese (Japan)' },
-            { value: 'ko-kr', label: 'Korean (South Korea)' },
-            { value: 'ar-sa', label: 'Arabic (Saudi Arabia)' },
-            { value: 'ar-ae', label: 'Arabic (UAE)' },
-            { value: 'ar-eg', label: 'Arabic (Egypt)' },
-            { value: 'hi-in', label: 'Hindi (India)' },
-            { value: 'bn-bd', label: 'Bengali (Bangladesh)' },
-            { value: 'bn-in', label: 'Bengali (India)' },
-            { value: 'ur-pk', label: 'Urdu (Pakistan)' },
-            { value: 'ur-in', label: 'Urdu (India)' },
-            { value: 'pa-in', label: 'Punjabi (India)' },
-            { value: 'ta-in', label: 'Tamil (India)' },
-            { value: 'ta-lk', label: 'Tamil (Sri Lanka)' },
-            { value: 'th-th', label: 'Thai (Thailand)' },
-            { value: 'vi-vn', label: 'Vietnamese (Vietnam)' },
-            { value: 'id-id', label: 'Indonesian (Indonesia)' },
-            { value: 'ms-my', label: 'Malay (Malaysia)' },
-            { value: 'tr-tr', label: 'Turkish (Turkey)' },
-            { value: 'he-il', label: 'Hebrew (Israel)' },
-            { value: 'fa-ir', label: 'Persian (Iran)' },
-            { value: 'pl-pl', label: 'Polish (Poland)' },
-            { value: 'uk-ua', label: 'Ukrainian (Ukraine)' },
-            { value: 'cs-cz', label: 'Czech (Czech Republic)' },
-            { value: 'hu-hu', label: 'Hungarian (Hungary)' },
-            { value: 'ro-ro', label: 'Romanian (Romania)' },
-            { value: 'bg-bg', label: 'Bulgarian (Bulgaria)' },
-            { value: 'el-gr', label: 'Greek (Greece)' },
-            { value: 'hr-hr', label: 'Croatian (Croatia)' },
-            { value: 'sr-rs', label: 'Serbian (Serbia)' },
-            { value: 'sk-sk', label: 'Slovak (Slovakia)' },
-            { value: 'sl-si', label: 'Slovenian (Slovenia)' },
-            { value: 'lt-lt', label: 'Lithuanian (Lithuania)' },
-            { value: 'lv-lv', label: 'Latvian (Latvia)' },
-            { value: 'et-ee', label: 'Estonian (Estonia)' },
-            { value: 'is-is', label: 'Icelandic (Iceland)' },
-            { value: 'mt-mt', label: 'Maltese (Malta)' },
-            { value: 'ga-ie', label: 'Irish (Ireland)' },
-            { value: 'cy-gb', label: 'Welsh (Wales)' },
-            { value: 'sq-al', label: 'Albanian (Albania)' },
-            { value: 'mk-mk', label: 'Macedonian (North Macedonia)' },
-            { value: 'bs-ba', label: 'Bosnian (Bosnia and Herzegovina)' },
-            { value: 'ka-ge', label: 'Georgian (Georgia)' },
-            { value: 'hy-am', label: 'Armenian (Armenia)' },
-            { value: 'kk-kz', label: 'Kazakh (Kazakhstan)' },
-            { value: 'uz-uz', label: 'Uzbek (Uzbekistan)' },
-            { value: 'mn-mn', label: 'Mongolian (Mongolia)' }
-            // Add any additional languages as needed
-        ];
+    { value: 'en-us', label: 'English (US)' },
+    { value: 'en-gb', label: 'English (UK)' },
+    { value: 'en-ca', label: 'English (Canada)' },
+    { value: 'en-au', label: 'English (Australia)' },
+    { value: 'en-in', label: 'English (India)' },
+    { value: 'es-es', label: 'Spanish (Spain)' },
+    { value: 'es-mx', label: 'Spanish (Mexico)' },
+    { value: 'es-us', label: 'Spanish (US)' },
+    { value: 'fr-fr', label: 'French (France)' },
+    { value: 'fr-ca', label: 'French (Canada)' },
+    { value: 'de-de', label: 'German (Germany)' },
+    { value: 'de-at', label: 'German (Austria)' },
+    { value: 'de-ch', label: 'German (Switzerland)' },
+    { value: 'it-it', label: 'Italian (Italy)' },
+    { value: 'it-ch', label: 'Italian (Switzerland)' },
+    { value: 'pt-br', label: 'Portuguese (Brazil)' },
+    { value: 'pt-pt', label: 'Portuguese (Portugal)' },
+    { value: 'nl-nl', label: 'Dutch (Netherlands)' },
+    { value: 'nl-be', label: 'Dutch (Belgium)' },
+    { value: 'sv-se', label: 'Swedish (Sweden)' },
+    { value: 'no-no', label: 'Norwegian (Norway)' },
+    { value: 'fi-fi', label: 'Finnish (Finland)' },
+    { value: 'da-dk', label: 'Danish (Denmark)' },
+    { value: 'ru-ru', label: 'Russian (Russia)' },
+    { value: 'zh-cn', label: 'Chinese (Simplified, China)' },
+    { value: 'zh-tw', label: 'Chinese (Traditional, Taiwan)' },
+    { value: 'zh-hk', label: 'Chinese (Traditional, Hong Kong)' },
+    { value: 'ja-jp', label: 'Japanese (Japan)' },
+    { value: 'ko-kr', label: 'Korean (South Korea)' },
+    { value: 'ar-sa', label: 'Arabic (Saudi Arabia)' },
+    { value: 'ar-ae', label: 'Arabic (UAE)' },
+    { value: 'ar-eg', label: 'Arabic (Egypt)' },
+    { value: 'hi-in', label: 'Hindi (India)' },
+    { value: 'bn-bd', label: 'Bengali (Bangladesh)' },
+    { value: 'bn-in', label: 'Bengali (India)' },
+    { value: 'ur-pk', label: 'Urdu (Pakistan)' },
+    { value: 'ur-in', label: 'Urdu (India)' },
+    { value: 'pa-in', label: 'Punjabi (India)' },
+    { value: 'ta-in', label: 'Tamil (India)' },
+    { value: 'ta-lk', label: 'Tamil (Sri Lanka)' },
+    { value: 'th-th', label: 'Thai (Thailand)' },
+    { value: 'vi-vn', label: 'Vietnamese (Vietnam)' },
+    { value: 'id-id', label: 'Indonesian (Indonesia)' },
+    { value: 'ms-my', label: 'Malay (Malaysia)' },
+    { value: 'tr-tr', label: 'Turkish (Turkey)' },
+    { value: 'he-il', label: 'Hebrew (Israel)' },
+    { value: 'fa-ir', label: 'Persian (Iran)' },
+    { value: 'pl-pl', label: 'Polish (Poland)' },
+    { value: 'uk-ua', label: 'Ukrainian (Ukraine)' },
+    { value: 'cs-cz', label: 'Czech (Czech Republic)' },
+    { value: 'hu-hu', label: 'Hungarian (Hungary)' },
+    { value: 'ro-ro', label: 'Romanian (Romania)' },
+    { value: 'bg-bg', label: 'Bulgarian (Bulgaria)' },
+    { value: 'el-gr', label: 'Greek (Greece)' },
+    { value: 'hr-hr', label: 'Croatian (Croatia)' },
+    { value: 'sr-rs', label: 'Serbian (Serbia)' },
+    { value: 'sk-sk', label: 'Slovak (Slovakia)' },
+    { value: 'sl-si', label: 'Slovenian (Slovenia)' },
+    { value: 'lt-lt', label: 'Lithuanian (Lithuania)' },
+    { value: 'lv-lv', label: 'Latvian (Latvia)' },
+    { value: 'et-ee', label: 'Estonian (Estonia)' },
+    { value: 'is-is', label: 'Icelandic (Iceland)' },
+    { value: 'mt-mt', label: 'Maltese (Malta)' },
+    { value: 'ga-ie', label: 'Irish (Ireland)' },
+    { value: 'cy-gb', label: 'Welsh (Wales)' },
+    { value: 'sq-al', label: 'Albanian (Albania)' },
+    { value: 'mk-mk', label: 'Macedonian (North Macedonia)' },
+    { value: 'bs-ba', label: 'Bosnian (Bosnia and Herzegovina)' },
+    { value: 'ka-ge', label: 'Georgian (Georgia)' },
+    { value: 'hy-am', label: 'Armenian (Armenia)' },
+    { value: 'kk-kz', label: 'Kazakh (Kazakhstan)' },
+    { value: 'uz-uz', label: 'Uzbek (Uzbekistan)' },
+    { value: 'mn-mn', label: 'Mongolian (Mongolia)' }
+    // Add any additional languages as needed
+];
 
     // Flag to track if form can be updated
     $scope.updatable = false;
@@ -303,4 +303,55 @@ app.controller('leadsController', ['$scope', function ($scope, $http, $location,
         $scope.apiMessage = 'Form submitted successfully!';
         $scope.updatable = false; // Disable submit button again
     };
+
+
+        // SMTP Configuration
+            $scope.smtp = {
+                server: '',
+                port: 587,
+                security: '',
+                username: '',
+                password: '',
+                from: '',
+                senderName: '',
+                testEmail: ''
+            };
+
+            // Security options for dropdown
+            $scope.securityOptions = [
+                { value: '', label: 'None' },
+                { value: 'ssl', label: 'SSL' },
+                { value: 'tls', label: 'TLS' }
+            ];
+
+            // Watch the smtp.security model for changes and set port accordingly
+                $scope.$watch('smtp.security', function(newSecurity) {
+                    if (newSecurity === 'ssl') {
+                        $scope.smtp.port = 465;
+                    } else if (newSecurity === 'tls') {
+                        $scope.smtp.port = 587;
+                    } else if (newSecurity === ' ') {
+                        $scope.smtp.port = 25;
+                    }
+                });
+
+            // Check if all required fields are filled (excluding Test Email)
+            $scope.isRequiredFieldsFilled = function() {
+                return $scope.smtp.username && $scope.smtp.password && $scope.smtp.server &&
+                       $scope.smtp.port && $scope.smtp.security && $scope.smtp.senderName;
+            };
+
+            // Check if all fields are filled (including optional Test Email)
+            $scope.isAllFieldsFilled = function() {
+                return $scope.isRequiredFieldsFilled() && $scope.smtp.testEmail;
+            };
+
+            $scope.saveSmtpSettings = function() {
+                alert('SMTP settings saved');
+                console.log($scope.smtp);
+            };
+
+            $scope.testConnection = function() {
+                alert('Testing SMTP connection');
+            };
 }]);
